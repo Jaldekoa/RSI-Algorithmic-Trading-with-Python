@@ -56,5 +56,6 @@ coins = [fiat, "BTC", "ETH", "BCH", "LTC", "LINK"]
 I have tested that the script works with EUR and USD.
 
 
+## References
 ***This project is based on the following article:***
-* * - Automating cryptocurrencies investment: https://quantdare.com/automating-cryptocurrencies-investment/ * *
+- * * Automating cryptocurrencies investment: https://quantdare.com/automating-cryptocurrencies-investment/ * *
