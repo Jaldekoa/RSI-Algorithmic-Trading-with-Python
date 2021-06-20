@@ -74,12 +74,10 @@ while True:
 
         #Sell orders
         for s in sell_queue:
-            print("Sell " + s)
             auth_client.place_market_order(product_id=s+"-"+fiat, side='sell', size=str(balances[s]))
 
         #Buy orders
         for b in buy_queue:
-            print("Buy " + b)
             auth_client.place_market_order(product_id=b+"-"+fiat, side='buy', funds=str(balances[b]/len(buy_queue)))
 
         time.sleep(granularity)
