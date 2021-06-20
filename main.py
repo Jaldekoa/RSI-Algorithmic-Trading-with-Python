@@ -10,7 +10,7 @@ key = "YOUR API KEY GOES HERE"
 b64secret = "YOUR SECRET API KEY GOES HERE"
 passphrase = "YOUR PASSPHRASE GOES HERE"
 
-granularity = 60 #[60 = "1min", 300 = "5min", 900 = "15min", 3600 = "1h", 21600 = "6h", 86400 = "1d"]
+granularity = 86400 #[60 = "1min", 300 = "5min", 900 = "15min", 3600 = "1h", 21600 = "6h", 86400 = "1d"]
 short, long = 9, 25 #RSI short and RSI long
 fiat = "EUR" #Your fiat currency here, preferably USD or EUR
 coins = [fiat, "BTC", "ETH", "BCH", "LTC", "LINK"] #Crypto coins you want to trade
