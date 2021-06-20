@@ -8,9 +8,9 @@ The  [Relative Strength Index](https://en.wikipedia.org/wiki/Relative_strength_i
 
 Here I test a method to invest in based on crossing RSI indicators. I set two windows: a short one of 9 periods and a long one based on 25 periods. You can change it easily.
 
-'''
+```
 short, long = 9, 25
-'''
+```
 
 The rule to trade is as following:
 
@@ -19,24 +19,38 @@ The rule to trade is as following:
 3. The weight is allocated equally between every currency that is recommended to buy.
 4. If there no currency avalilable to invest, it keep money in cash (fiat currency).
 
-#Periods of time
+## Periods of time
 
 I recommend using a time interval of 1 day since according to the tests I have carried out, it is the most profitable period due to the exchange's fees (0.5% for maker and taker in market orders).
 
 You can change the base period of time in the next variable:
 
-'''
+```
 #[60 = "1min", 300 = "5min", 900 = "15min", 3600 = "1h", 21600 = "6h", 86400 = "1d"]
 granularity = 60
-'''
+```
 Time expressed in seconds.
 
-#Coinbase Pro API
+## Coinbase Pro API
 
 You must create an API key in [Coinbase Pro](https://pro.coinbase.com/) > Profile > API. You need three different strings:
 
-'''
+```
 key = "YOUR API KEY GOES HERE"
 b64secret = "YOUR SECRET API KEY GOES HERE"
 passphrase = "YOUR PASSPHRASE GOES HERE"
-'''
+```
+
+## Cryptocurrencies and fiat money
+
+You can easily change which cryptos you want the script to trade. You can change your fiat currency too.
+
+```
+#Your fiat currency here, preferably USD or EUR
+fiat = "EUR"
+
+#Cryptocurrencies you want to trade
+coins = [fiat, "BTC", "ETH", "BCH", "LTC", "LINK"]
+```
+
+I have tested that the script works with EUR and USD.
